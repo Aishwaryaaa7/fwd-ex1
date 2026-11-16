@@ -97,7 +97,18 @@ Open a browser and navigate to http://127.0.0.1:8000 (or the assigned port).
 <table border="1" cellpadding="6" cellspacing="0">
   <tr><th>Field</th><th>Size</th></tr>
   <tr><td>Source Port</td><td>16 bits</td
-
+"""
+class myhandler(BaseHTTPRequestHandler):
+    def do_GET(self):
+        print("request received")
+        self.send_response(200)
+        self.send_header('content-type', 'text/html; charset=utf-8')
+        self.end_headers()
+        self.wfile.write(content.encode())
+server_address = ('',880)
+httpd = HTTPServer(server_address,myhandler)
+print("my webserver is running...")
+httpd.serve_forever()
 ~~~
 ## OUTPUT:
 <img width="1252" height="905" alt="Screenshot 2026-11-14 160347" src="https://github.com/user-attachments/assets/ebf731dc-21f2-499d-a28d-f4a73ab3ec86" />
