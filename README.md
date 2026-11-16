@@ -36,6 +36,7 @@ Start the server script and check for errors.
 Open a browser and navigate to http://127.0.0.1:8000 (or the assigned port).
 
 ## PROGRAM:
+~~~
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -97,7 +98,7 @@ Open a browser and navigate to http://127.0.0.1:8000 (or the assigned port).
   <tr><th>Field</th><th>Size</th></tr>
   <tr><td>Source Port</td><td>16 bits</td
 
-
+~~~
 ## OUTPUT:
 <img width="1252" height="905" alt="Screenshot 2026-11-14 160347" src="https://github.com/user-attachments/assets/ebf731dc-21f2-499d-a28d-f4a73ab3ec86" />
 
